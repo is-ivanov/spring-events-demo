@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    open-in-view: off
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        generate_statistics: true
+
+logging:
+  level:
+    org.springframework.transaction.support.TransactionSynchronizationUtils: debug
+#    org.springframework.transaction.interceptor: trace
+    org.springframework.orm.jpa.JpaTransactionManager: debug
+    org.hibernate.stat: debug
+    org.hibernate.sql: debug
